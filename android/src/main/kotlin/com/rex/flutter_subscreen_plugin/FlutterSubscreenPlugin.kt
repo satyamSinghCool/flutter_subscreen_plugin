@@ -20,7 +20,7 @@ class FlutterSubscreenPlugin : FlutterPlugin, ActivityAware, MethodCallHandler {
 
     private lateinit var context: Context
     private lateinit var mainChannel: MethodChannel
-    private var subChannel: MethodChannel?
+    private var subChannel: MethodChannel? = null
 
     companion object {
         private const val mainChannelName = "screen_plugin_main_channel"
